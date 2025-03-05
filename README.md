@@ -52,12 +52,26 @@ python inference.py `
     --eval_pair
 ```
 INPUT:
+
 ![Mô tả ảnh](images/cloth.jpg)
 
 ![Mô tả ảnh](images/person.jpg)
 ![Mô tả ảnh](images/mask.jpg)
+
 OUTPUT:
+
 ![Mô tả ảnh](images/output.jpg)
 
 ## Fast API
+Run with Docker
+### 1.Build Docker Image
+bash
+Copy
+Edit
+docker build -t catvton-fastapi .
+### 2.Run the Container
+bash
+Copy
+Edit
+docker run -p 8000:8000 catvton-fastapi
 ![Mô tả ảnh](images/fastapi.png)
