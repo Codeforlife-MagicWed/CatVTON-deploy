@@ -65,13 +65,7 @@ OUTPUT:
 ## Fast API
 Run with Docker
 ### 1.Build Docker Image
-bash
-Copy
-Edit
 docker build -t catvton-fastapi .
 ### 2.Run the Container
-bash
-Copy
-Edit
 docker run -p 8000:8000 catvton-fastapi
 ![Mô tả ảnh](images/fastapi.png)
