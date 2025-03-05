@@ -56,4 +56,4 @@ INPUT:
 OUTPUT:
 
 ## Fast API
-
+![Mô tả ảnh](images/fastapi.png)
