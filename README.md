@@ -52,11 +52,12 @@ python inference.py `
     --eval_pair
 ```
 INPUT:
-![Mô tả ảnh](images/cloth.png)
-![Mô tả ảnh](images/person.png)
-![Mô tả ảnh](images/mask.png)
+![Mô tả ảnh](images/cloth.jpg)
+
+![Mô tả ảnh](images/person.jpg)
+![Mô tả ảnh](images/mask.jpg)
 OUTPUT:
-![Mô tả ảnh](images/output.png)
+![Mô tả ảnh](images/output.jpg)
 
 ## Fast API
 ![Mô tả ảnh](images/fastapi.png)
