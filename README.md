@@ -53,10 +53,7 @@ python inference.py `
 ```
 INPUT:
 
-![Mô tả ảnh](images/cloth.jpg)
-
-![Mô tả ảnh](images/person.jpg)
-![Mô tả ảnh](images/mask.jpg)
+![Mô tả ảnh](images/cloth.jpg) ![Mô tả ảnh](images/person.jpg) ![Mô tả ảnh](images/mask.jpg)
 
 OUTPUT:
 
