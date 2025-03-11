@@ -61,6 +61,10 @@ OUTPUT:
 
 ## Fast API with Triton inference server
 ### 1. Convert vae, unet to onnx 
+```
+base_ckpt = "/content/drive/MyDrive/CatVTON/models/sd_inpainting"
+attn_ckpt = "/content/drive/MyDrive/CatVTON/models/CatVTON_checkpoint"
+```
 
 ### 2. Create model repository
 ```
