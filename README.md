@@ -105,6 +105,3 @@ I0311 14:34:46.361849 1 http_server.cc:185] Started Metrics Service at 0.0.0.0:8
 uvicorn inference_triton:app --host 0.0.0.0 --port 8000 --reload
 ```
 
-
-![Mô tả ảnh](images/fastapi.png)
-
