@@ -59,10 +59,48 @@ OUTPUT:
 
 ![Mô tả ảnh](images/output.jpg)
 
-## Fast API
-Run with Docker
-### 1.Build Docker Image
-docker build -t catvton-fastapi .
-### 2.Run the Container
-docker run -p 8000:8000 catvton-fastapi
+## Fast API with Triton inference server
+### 1. Convert vae, unet to onnx 
+
+### 2. Create model repository
+```
+model_repository/
+│── unet/
+│   ├── 1/
+│   │   ├── model.onnx
+│   ├── config.pbtxt
+│── vae/
+│   ├── 1/
+│   │   ├── model.onnx
+│   ├── config.pbtxt
+```
+
+### 3.Launch Triton Inference server
+```
+docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 `
+     -v C:\CatVTON_Project\model_repository:/models `
+     nvcr.io/nvidia/tritonserver:23.04-py3 tritonserver --model-repository=/models
+```
+
+OUTPUT
+```
+I0311 14:34:46.186512 1 server.cc:653] 
++-------+---------+--------+
+| Model | Version | Status |
++-------+---------+--------+
+| unet  | 1       | READY  |
+| vae   | 1       | READY  |
++-------+---------+--------+
+...
+I0311 14:34:46.307637 1 grpc_server.cc:2450] Started GRPCInferenceService at 0.0.0.0:8001
+I0311 14:34:46.309228 1 http_server.cc:3555] Started HTTPService at 0.0.0.0:8000
+I0311 14:34:46.361849 1 http_server.cc:185] Started Metrics Service at 0.0.0.0:8002
+```
+### 4. Run Fast API
+```
+uvicorn inference_triton:app --host 0.0.0.0 --port 8000 --reload
+```
+
+
 ![Mô tả ảnh](images/fastapi.png)
+
