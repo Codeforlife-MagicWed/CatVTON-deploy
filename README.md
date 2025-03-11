@@ -52,6 +52,10 @@ python inference.py `
     --eval_pair
 ```
 INPUT:
+<img src="images/cloth.png" alt="Mô tả ảnh" width="300" height="200">
+<img src="images/person.png" alt="Mô tả ảnh" width="300" height="200">
+<img src="images/mask.png" alt="Mô tả ảnh" width="300" height="200">
+
 
 ![Mô tả ảnh](images/cloth.png) ![Mô tả ảnh](images/person.png) ![Mô tả ảnh](images/mask.png)
 
