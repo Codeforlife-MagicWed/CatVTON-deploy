@@ -53,14 +53,16 @@ python inference.py `
 ```
 INPUT:
 
-<img src="images/cloth.png" alt="Mô tả ảnh" width="300" height="400">
-<img src="images/person.png" alt="Mô tả ảnh" width="300" height=400">
-<img src="images/mask.png" alt="Mô tả ảnh" width="300" height="400">
-
+<div style="display: flex; justify-content: space-around;">
+    <img src="images/cloth.png" alt="Mô tả ảnh" width="300" height="400">
+    <img src="images/person.png" alt="Mô tả ảnh" width="300" height="400">
+    <img src="images/mask.png" alt="Mô tả ảnh" width="300" height="400">
+</div>
 
 
 
 OUTPUT:
+
 <img src="images/output.png" alt="Mô tả ảnh" width="300" height="400">
 
 ## Fast API with Triton inference server
