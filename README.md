@@ -53,11 +53,11 @@ python inference.py `
 ```
 INPUT:
 
-![Mô tả ảnh](images/cloth.jpg) ![Mô tả ảnh](images/person.jpg) ![Mô tả ảnh](images/mask.jpg)
+![Mô tả ảnh](images/cloth.png) ![Mô tả ảnh](images/person.png) ![Mô tả ảnh](images/mask.png)
 
 OUTPUT:
 
-![Mô tả ảnh](images/output.jpg)
+![Mô tả ảnh](images/output.png)
 
 ## Fast API with Triton inference server
 ### 1. Convert vae, unet to onnx 
